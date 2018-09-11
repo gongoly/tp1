@@ -13,7 +13,7 @@ public class TestCalculator {
 
         //Assert = Verifier
         Assert.assertEquals(expectedResult, result);
-
+     //Add comment
     }
     @Test(expected = IndexOutOfBoundsException.class)
     public void  testMax()
@@ -37,5 +37,14 @@ public class TestCalculator {
 
         //Assert = Verifier
         //S Assert.assertEquals(expectedResult, result);
+    }
+    @Test
+    public void faildTest(){
+        int arg1 = 1;
+        int agr2 = 1;
+        int expectedResult = 3;
+        //Act = Action
+        int result = Calculator.add(arg1, agr2);
+        Assert.assertEquals(expectedResult, result);
     }
 }
